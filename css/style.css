@@ -36,18 +36,16 @@ position: fixed;
 
 nav.black img.logo-prueba{
 
-  width: 90px;
-  height: 70px;
+  width: 110px;
+  height: 90px;
   transition: .5s;
 
 }
 
-.
-
-
 
  .fa-home, .fa-sun, .fa-car, .fa-map, .fa-tty, .fa-users{
   margin-right: 30px;
+
 
 
 }
@@ -851,7 +849,7 @@ border:none;
     left: 0;
     right: 0;
     content: '';
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     z-index: -1; }
   #colorlib-intro .video-wrap {
     z-index: 2; }
@@ -1528,6 +1526,7 @@ i{
 
 
 
+
   @media screen and (max-width: 768px) {
     #colorlib-offcanvas {
       display: block; } }
@@ -1555,7 +1554,9 @@ i{
         display: none; }
       #colorlib-offcanvas ul li.offcanvas-has-dropdown > a {
         display: block;
-        position: relative; }
+        position: relative; 
+        display: flex;
+      }
         #colorlib-offcanvas ul li.offcanvas-has-dropdown > a:after {
           position: absolute;
           right: 0px;
@@ -1959,7 +1960,7 @@ display: table;
   /*background-color: red;*/
   position: relative;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 rgba(200, 95, 66, .4),
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, .5),
               inset 0 0 0 16px rgba(255, 255, 255, .6),
               0 1px 2px rgba(0, 0, 0, .1);
               transition: all 0.4s ease-in-out;
@@ -1984,17 +1985,17 @@ backface-visibility: hidden;
 }
 
 .ch-info h3{
-  color:#000;
+  color:#fff;
   position: relative;
-  text-shadow: 0 0 1px #000,
-               0 1px 2px rgba(0, 0, 0, .3);
+  text-shadow: 0 0 1px #fff,
+               0 1px 2px rgba(0, 0, 0, .5);
 }
 
 
 .ch-info p{
-  color: #000;
+  color: #ffffff;
   margin: 0;
-  border-top:  1px solid rgba(255, 255, 255, .4);
+  border-top:  1px solid rgba(255, 255, 255, .5);
 }
 
 .ch-info p a:hover{
@@ -2003,7 +2004,7 @@ color: rgba(255, 242, 34, .8);
 
 .services:hover{
   box-shadow:
-           inset 0 0 0 175px rgba(200, 95, 66, .4);
+           inset 0 0 0 175px rgba(0, 0, 0, .5);
 
 }
 .services:hover .ch-info{
