@@ -375,6 +375,30 @@
 					<h2>Nuestros Servicios</h2>
 				</div>
 
+				<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 animate-box text-center caja-sec">
+					<div class="services img-circle hotel-img" style="background-image: url(images/shuttle.jpg);">
+						<!-- <span class="icon">
+								<i class="flaticon-boat"></i>
+							</span>
+							<h3>Transporte Compartido</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quos dolore magni necessitatibus neque eum aut placeat eius totam ea veritatis voluptate aperiam nihil odio aspernatur, atque fuga hic ducimus.</p> -->
+
+
+						<section class="ch-grid">
+							<article>
+								<div class="ch-item ch-img-1">
+									<div class="ch-info">
+										<h3 class="services-interior">Transporte Compartido</h3>
+										<p class="services-interior">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+										<a href="https://www.youtube.com" class="services-interior">Viajar Ahora</a>
+
+									</div>
+								</div>
+							</article>
+						</section>
+
+					</div>
+				</div>
 
 
 				<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 animate-box text-center caja-sec">
@@ -404,19 +428,17 @@
 
 
 				<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 animate-box text-center caja-sec">
-					<div class="services img-circle hotel-img" style="background-image: url(images/shuttle.jpg);">
+					<div class="services img-circle hotel-img" style="background-image: url(images/placestovisit.jpg);">
 						<!-- <span class="icon">
-								<i class="flaticon-boat"></i>
+								<i class="flaticon-postcard"></i>
 							</span>
-							<h3>Transporte Compartido</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quos dolore magni necessitatibus neque eum aut placeat eius totam ea veritatis voluptate aperiam nihil odio aspernatur, atque fuga hic ducimus.</p> -->
-
-
+							<h3>Lugares Por Visitar</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam deserunt eaque inventore, perspiciatis corporis vero, quis quae excepturi deleniti velit. Porro sunt consectetur, ducimus et suscipit, quod quisquam explicabo molestiae.</p> -->
 						<section class="ch-grid">
 							<article>
 								<div class="ch-item ch-img-1">
 									<div class="ch-info">
-										<h3 class="services-interior">Transporte Compartido</h3>
+										<h3 class="services-interior">Lugares por Visitar</h3>
 										<p class="services-interior">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 										<a href="https://www.youtube.com" class="services-interior">Viajar Ahora</a>
 
@@ -427,6 +449,7 @@
 
 					</div>
 				</div>
+
 
 				<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 animate-box text-center caja-sec">
 					<div class="services img-circle hotel-img" style="background-image: url(images/img_bg_3.jpg);">
@@ -440,29 +463,6 @@
 								<div class="ch-item ch-img-1">
 									<div class="ch-info">
 										<h3 class="services-interior">Paquetes Turisticos</h3>
-										<p class="services-interior">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-										<a href="https://www.youtube.com" class="services-interior">Viajar Ahora</a>
-
-									</div>
-								</div>
-							</article>
-						</section>
-
-					</div>
-				</div>
-
-				<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 animate-box text-center caja-sec">
-					<div class="services img-circle hotel-img" style="background-image: url(images/placestovisit.jpg);">
-						<!-- <span class="icon">
-								<i class="flaticon-postcard"></i>
-							</span>
-							<h3>Lugares Por Visitar</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam deserunt eaque inventore, perspiciatis corporis vero, quis quae excepturi deleniti velit. Porro sunt consectetur, ducimus et suscipit, quod quisquam explicabo molestiae.</p> -->
-						<section class="ch-grid">
-							<article>
-								<div class="ch-item ch-img-1">
-									<div class="ch-info">
-										<h3 class="services-interior">Lugares por Visitar</h3>
 										<p class="services-interior">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 										<a href="https://www.youtube.com" class="services-interior">Viajar Ahora</a>
 
@@ -571,8 +571,8 @@
 	<div class="contenedor2 col-xs-12 col-sm-12 col-md-12 text-center colorlib-heading animate-box">
 			<h2>¡Lo mejor de Nicaragua!</h2>
 
-		<video class="fm-video video-js vjs-16-9 vjs-big-play-centered " data-setup="{}" controls id="fm-video">
-			<source src="images/Keyboard.mp4" type="video/mp4">
+		<video class="fm-video video-js vjs-16-9 vjs-big-play-centered"  data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }' controls id="fm-video">
+			<!-- <source src="images/Keyboard.mp4" type="video/mp4"> -->
 		</video>
 	</div>
 </div>
@@ -593,14 +593,25 @@
 						perder: Playas paradisiacas, islas caribeñas, reservas naturales y otros destinos. Revisa Nuestra Mejor seleccion</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 animate-box">
 
 
 
 
-						<div class="swiper-container">
-								<div class="swiper-wrapper">
+	<div class="row">
+		<div class="col-md-12 animate-box">
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+	
+			
+			<div class="swiper-slide"> 
+				<div class="imgBx">
+					<img src="images/imagen2.jpg"  width="400" height="400" class="img-responsive">
+				</div>
+				<div class="details">
+					<h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+				</div>
+			</div>
 			
 			<div class="swiper-slide"> 
 			<div class="imgBx">
@@ -610,14 +621,7 @@
 			<h3>Bladimir siezar<br><span>Web Developer</span></h3>
 			</div>
 			</div>
-			<div class="swiper-slide"> 
-			<div class="imgBx">
-			<img src="images/imagen2.jpg"  width="400" height="400" class="img-responsive">
-			</div>
-			<div class="details">
-			<h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
-			</div>
-			</div>
+
 			<div class="swiper-slide"> 
 			<div class="imgBx">
 			<img src="images/imagen3.jpg"  width="400" height="400" class="img-responsive">
@@ -694,25 +698,7 @@
 			<div class="swiper-pagination"></div>
 		</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-					
+	
 				</div>
 			</div>
 		</div>
@@ -853,6 +839,8 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script src="js/video.js"></script>
+	<script src="js/video.min.js"></script>
+   <script src="js/Youtube.min.js"></script>
 
 
 	<script>

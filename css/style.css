@@ -656,8 +656,11 @@ border:none;
           .tour-wrap .tour-entry .desc .city, .tour-wrap .tour-entry .desc .star {
             color: #e6e6e6; }
           .tour-wrap .tour-entry .desc .price {
+            font-size: 1.6rem;
+            border: none;
             color: #fff;
             background: #00BBF0;
+            opacity: 0.8;
             padding: 4px 7px; } }
     .tour-wrap .tour-entry:hover .tour-img {
       top: -55%; }
