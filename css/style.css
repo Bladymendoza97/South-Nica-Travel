@@ -160,12 +160,17 @@ h1, h2, h3, h4, h5, h6, figure {
     }
     .colorlib-nav #colorlib-logo a {
       position: relative;
-      color: #fff; }
+      color: #fff;
+    padding-left: 0; }
 
 
 .logo-prueba{
   height: 105px;
   width: 120px;
+}
+
+.col-xs-3 {
+  padding-left: 0px;
 }
 
   @media screen and (max-width: 768px) {
@@ -940,7 +945,7 @@ border:none;
       border: 1px solid #fff !important;
       color: #fff; }
 
-#colorlib-hotel .owl-carousel {
+/* #colorlib-hotel .owl-carousel {
   z-index: 0; }
 
 #colorlib-hotel .owl-carousel .owl-stage-outer {
@@ -974,9 +979,9 @@ border:none;
     box-shadow: none;
     border: none; }
   #colorlib-hotel .owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
-    background: #00BBF0; }
+    background: #00BBF0; } */
 
-.hotel-entry {
+/* .hotel-entry {
   margin-bottom: 3em; }
   .hotel-entry .hotel-img {
     height: 280px;
@@ -1130,7 +1135,7 @@ border:none;
     border: none; }
     .testimony blockquote p {
       color: #000;
-      font-size: 16px; }
+      font-size: 16px; } */
 
 article {
   width: 100%;
@@ -1717,7 +1722,13 @@ i{
      }
   @media screen and (max-width: 768px) {
     .colorlib-nav-toggle {
-      display: block; } }
+      display: block;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 4px;
+     } }
 
 
 
