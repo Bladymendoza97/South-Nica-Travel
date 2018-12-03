@@ -1,4 +1,4 @@
-;(function () {
+(function () {
 	
 	'use strict';
 
@@ -304,22 +304,6 @@
 
 }());
 
-/*Scroll navbar Animate*/
-
-$(window).on('scroll', function () {
-	if ($(window).scrollTop()) {
-		$('nav').addClass('black');
-	}
-
-	else {
-
-		$('nav').removeClass('black');
-	}
-});
-
-
-
-
 /* Initialize Swiper*/ 
 
 
@@ -350,3 +334,24 @@ var swiper = new Swiper('.swiper-container', {
 	  prevEl: '.swiper-button-prev',
 	},
    });
+/*Scroll navbar Animate*/
+
+
+
+
+
+$(window).on('scroll', function(){
+if ($(window).scrollTop()){
+$('nav').addClass('black');
+}
+
+else
+{
+
+$('nav').removeClass('black');
+}
+});
+
+
+
+
