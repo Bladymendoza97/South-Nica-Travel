@@ -12,19 +12,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="css/set1.css" /> -->
+	     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	 
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+ 
 
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
@@ -35,21 +35,40 @@
 	
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-		<!-- Lightbox  -->
-	<link rel="stylesheet" href="css/lightbox.min.css">
+		<!-- FancyBox  -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	 
  <script>
+
+
+	 /*Scroll navbar Animate*/
+	 
+	 $(window).on('scroll', function(){
+		 if ($(window).scrollTop()){
+			 $('nav').addClass('black');
+			}
+			
+			else
+			{
+				
+				$('nav').removeClass('black');
+			}
+		});
+		
+	
+
 	 $(function(){
 	setTimeout(function(){
 	$('.text-animation').removeClass('hidden-text');
 	}, 500);
 	})();
+ 
 
  </script>
+ 
 </head>
-<body id="beach">
+<body >
  
 	<div class="colorlib-loader"></div>
 	<div id="page">
@@ -57,7 +76,7 @@
 		<div class="image" >
 				<div id="container-header" >
 
-				<div class="container-fluid ">
+				<div class="container-fluid " id="beach">
 				<div class="row">
 
 
@@ -160,163 +179,138 @@
 
 
 
-<br>
-<br>
-<br>
 
 <!-- SECTIONS BEACH -->
 		<section class="images-beach">
-			<div class="container-fluid">
-				<!-- <div class="container"> -->
 
-					<!-- Primera Fila -->
-					<div class="row">
-				
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 size animate-box">
-							<div class="box">
-								<div class="imgBox">
-									<a href="images/GIGANTE-BEACH-optimizado.jpg" data-lightbox="mygallery" data-title="Gigante Beach"><img src="images/GIGANTE-BEACH-optimizado.jpg" alt="Gigante Beach" class="img-responsive"></a>
-								</div>
-                                <div class="content">
-                                	<h3>Gigante Beach</h3>
-                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, at.</p>
-                                	<a href="#" class="btn btn-default btnD">Read More</a>
-                                </div>
-							</div>
+					<!-- <div class="row"> -->
+  
+					<div class="content">
+						
+						
+						<div class="grid grind_1">
+							<figure class="effect-oscar">
+								<img src="images/POPOYO-optimizado.jpg" alt="img09" class="img-responsive"/>
+								<figcaption>
+									<h2>Popoyo <span>Beach</span></h2>
+									<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+									<a href="#">View more</a>
+								</figcaption>	
+
+							</figure>
+							<figure class="effect-oscar">
+									<img src="images/GIGANTE-BEACH-optimizado.jpg" alt="img10" class="img-responsive">
+								<figcaption>
+									<h2>Gigante <span>Beach</span></h2>
+									<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+									<a href="#">View more</a>
+									<a data-fancybox="gallery" data-caption="Popoyo Beach" href="images/GIGANTE-BEACH-optimizado.jpg"></a>
+								</figcaption>			
+							</figure>
 						</div>
 
+						
 
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 size animate-box">
-							<div class="box">
-								<div class="imgBox">
-									<a href="images/MARSELLA-2018.jpg" data-lightbox="mygallery" data-title="Marsella Beach"><img src="images/MARSELLA-2018.jpg" alt="Marsella Beach" class="img-responsive"></a>
-								</div>
-                                <div class="content">
-                                	<h3>Marsella Beach</h3>
-                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, at.</p>
-                                	<a href="#" class="btn btn-default btnD">Read More</a>
-                                </div>
+						<div class="grid grind_1">
+								<figure class="effect-oscar">
+									<img src="images/MARSELLA-2018.jpg" alt="img09" class="img-responsive">
+									<figcaption>
+										<h2>Marsella <span>Beach</span></h2>
+										<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+										<a href="#">View more</a>
+									<a data-fancybox="gallery" data-caption="Popoyo Beach" href="images/MARSELLA-2018.jpg" ></a>
+
+									</figcaption>	
+	
+								</figure>
+								<figure class="effect-oscar">
+									<img src="images/PLAYA-HERMOSA-NICARAGUA-SAN-JUAN-DEL-SUR-2018.jpg" alt="img10" class="img-responsive">
+									<figcaption>
+										<h2>Hermosa <span>Beach</span></h2>
+										<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+										<a href="#">View more</a>
+									<a data-fancybox="gallery" data-caption="Popoyo Beach" href="images/PLAYA-HERMOSA-NICARAGUA-SAN-JUAN-DEL-SUR-2018.jpg"></a>
+
+									</figcaption>			
+								</figure>
 							</div>
+
+						<div class="grid grind_1">
+							<figure class="effect-oscar">
+								<img src="images/MARSELLA-2018.jpg" alt="img09" class="img-responsive"/>
+								<figcaption>
+									<h2>Warm <span>Oscar</span></h2>
+									<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+									<a href="#">View more</a>
+									<a data-fancybox="gallery" data-caption="Popoyo Beach" href="images/GIGANTE-BEACH-optimizado.jpg"></a>
+
+								</figcaption>	
+
+							</figure>
+							<figure class="effect-oscar">
+								<img src="images/PLAYA-HERMOSA-NICARAGUA-SAN-JUAN-DEL-SUR-2018.jpg" alt="img10" class="img-responsive">
+								<figcaption>
+									<h2>Warm <span>Oscar</span></h2>
+									<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+									<a href="#">View more</a>
+									<a data-fancybox="gallery" data-caption="Popoyo Beach" href="images/GIGANTE-BEACH-optimizado.jpg"></a>
+
+								</figcaption>			
+							</figure>
 						</div>
 
+						<div class="grid grind_1">
+								<figure class="effect-oscar">
+									<img src="images/POPOYO-optimizado.jpg" alt="img09" class="img-responsive"/>
+									<figcaption>
+										<h2>Warm <span>Oscar</span></h2>
+										<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+										<a href="#">View more</a>
+									<a data-fancybox="gallery" data-caption="Popoyo Beach" href="images/GIGANTE-BEACH-optimizado.jpg"></a>
 
+									</figcaption>	
+	
+								</figure>
+								<figure class="effect-oscar">
+									<img src="images/POPOYO-optimizado.jpg" alt="img10" class="img-responsive"/>
+									<figcaption>
+										<h2>Warm <span>Oscar</span></h2>
+										<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+										<a href="#">View more</a>
+									<a data-fancybox="gallery" data-caption="Popoyo Beach" href="images/GIGANTE-BEACH-optimizado.jpg"></a>
 
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 size animate-box">
-							<div class="box">
-								<div class="imgBox">
-									<a href="images/LAS-PEÑITAS-LEON-optimizado.jpg" data-lightbox="mygallery" data-title="Peñitas Beach"><img src="images/LAS-PEÑITAS-LEON-optimizado.jpg" alt="Marsella Beach" class="img-responsive"></a>
-								</div>
-                                <div class="content">
-                                	<h3>Peñitas Beach</h3>
-                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, at.</p>
-                                	<a href="#" class="btn btn-default btnD">Read More</a>
-                                </div>
+									</figcaption>			
+								</figure>
 							</div>
-						</div>
 
+							<div class="grid grind_1">
+									<figure class="effect-oscar">
+										<img src="images/POPOYO-optimizado.jpg" alt="img09" class="img-responsive"/>
+										<figcaption>
+											<h2>Warm <span>Oscar</span></h2>
+											<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+											<a href="#">View more</a>
+									<a data-fancybox="gallery" data-caption="Popoyo Beach" href="images/GIGANTE-BEACH-optimizado.jpg"></a>
+
+										</figcaption>	
+		
+									</figure>
+									<figure class="effect-oscar">
+										<img src="images/POPOYO-optimizado.jpg" alt="img10" class="img-responsive"/>
+										<figcaption>
+											<h2>Warm <span>Oscar</span></h2>
+											<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+											<a href="#">View more</a>
+									<a data-fancybox="gallery" data-caption="Popoyo Beach" href="images/GIGANTE-BEACH-optimizado.jpg"></a>
+
+										</figcaption>			
+									</figure>
+								</div>
+						
 					</div>
-
-<!-- Segunda fila -->
-
-	<div class="row">
-				
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 size animate-box">
-							<div class="box">
-								<div class="imgBox">
-									<a href="images/REMANSO-optimizado.jpg" data-lightbox="mygallery" data-title="Remanso Beach"><img src="images/REMANSO-optimizado.jpg" alt="Gigante Beach" class="img-responsive"></a>
-								</div>
-                                <div class="content">
-                                	<h3>Remanso Beach</h3>
-                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, at.</p>
-                                	<a href="#" class="btn btn-default btnD ">Read More</a>
-                                </div>
-							</div>
-						</div>
-
-
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 size animate-box">
-							<div class="box">
-								<div class="imgBox">
-									<a href="images/POPOYO-optimizado.jpg" data-lightbox="mygallery" data-title="Popoyo Beach"><img src="images/POPOYO-optimizado.jpg" alt="Marsella Beach" class="img-responsive"></a>
-								</div>
-                                <div class="content">
-                                	<h3>Popoyo Beach</h3>
-                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, at.</p>
-                                	<a href="#" class="btn btn-default btnD">Read More</a>
-                                </div>
-							</div>
-						</div>
-
-
-
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 size animate-box">
-							<div class="box">
-								<div class="imgBox">
-									<a href="images/PLAYA-HERMOSA-NICARAGUA-SAN-JUAN-DEL-SUR-2018.jpg" data-lightbox="mygallery" data-title="Hermosa Beach"><img src="images/PLAYA-HERMOSA-NICARAGUA-SAN-JUAN-DEL-SUR-2018.jpg" alt="Marsella Beach" class="img-responsive"></a>
-								</div>
-                                <div class="content">
-                                	<h3>Hermosa Beach</h3>
-                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, at.</p>
-                                	<a href="#" class="btn btn-default btnD">Read More</a>
-                                </div>
-							</div>
-						</div>
-
-					</div>
-
-
-
-					<!-- Tercer fila -->
-
-	<div class="row">
-				
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 size animate-box">
-							<div class="box">
-								<div class="imgBox">
-									<a href="images/REMANSO-optimizado.jpg" data-lightbox="mygallery" data-title="Remanso Beach"><img src="images/REMANSO-optimizado.jpg" alt="Gigante Beach" class="img-responsive"></a>
-								</div>
-                                <div class="content">
-                                	<h3>Remanso Beach</h3>
-                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, at.</p>
-                                	<a href="#" class="btn btn-default btnD">Read More</a>
-                                </div>
-							</div>
-						</div>
-
-
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 size animate-box">
-							<div class="box">
-								<div class="imgBox">
-									<a href="images/POPOYO-optimizado.jpg" data-lightbox="mygallery" data-title="Popoyo Beach"><img src="images/POPOYO-optimizado.jpg" alt="Marsella Beach" class="img-responsive"></a>
-								</div>
-                                <div class="content">
-                                	<h3>Popoyo Beach</h3>
-                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, at.</p>
-                                	<a href="#" class="btn btn-default btnD">Read More</a>
-                                </div>
-							</div>
-						</div>
-
-
-
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 size animate-box">
-							<div class="box">
-								<div class="imgBox">
-									<a href="images/PLAYA-HERMOSA-NICARAGUA-SAN-JUAN-DEL-SUR-2018.jpg" data-lightbox="mygallery" data-title="Hermosa Beach"><img src="images/PLAYA-HERMOSA-NICARAGUA-SAN-JUAN-DEL-SUR-2018.jpg" alt="Marsella Beach" class="img-responsive"></a>
-								</div>
-                                <div class="content">
-                                	<h3>Hermosa Beach</h3>
-                                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, at.</p>
-                                	<a href="#" class="btn btn-default btnD">Read More</a>
-                                </div>
-							</div>
-						</div>
-
-					</div>
-
-
-				<!-- </div> -->
-			</div>
+							 
+					<!-- </div> -->
+ 
 		</section>
 
 		<br>
@@ -330,38 +324,24 @@
 		<br>
 		<br>
 
-
-
-		<h2>Apollo</h2>
-		<div class="grid">
-			<figure class="effect-apollo">
-				<img src="images/POPOYO-optimizado.jpg" alt="img18"/>
-				<figcaption>
-					<h2>Strong <span>Apollo</span></h2>
-					<p>Apollo's last game of pool was so strange.</p>
-					<a href="#">View more</a>
-				</figcaption>			
-			</figure>
-			<figure class="effect-apollo">
-				<img src="images/PLAYA-HERMOSA-NICARAGUA-SAN-JUAN-DEL-SUR-2018.jpg" alt="img22"/>
-				<figcaption>
-					<h2>Strong <span>Apollo</span></h2>
-					<p>Apollo's last game of pool was so strange.</p>
-					<a href="#">View more</a>
-				</figcaption>			
-			</figure>
-		</div>
+ 
 
 	<!-- jQuery -->
 
 
 
 		<!-- Main -->
-		<script src="js/main.js"></script>
-		<!-- Lightbox Jquery -->
-	<script src="js/lightbox-plus-jquery.min.js"></script>
 
-	<script src="js/jquery.min.js"></script>
+		<!-- hover3d.js -->
+
+		<script src="js/main.js"></script>
+		<script src="js/jquery.hover3d.js"></script>
+
+		<!-- fancybox.js -->
+		<script src="js/jquery.fancybox.min.js"></script>
+
+	
+
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
@@ -378,7 +358,31 @@
 	<script src="js/bootstrap-datepicker.js"></script>
 	<!-- Stellar Parallax -->
 	<script src="js/jquery.stellar.min.js"></script>
+		
+	<script>
+			// For Demo purposes only (show hover effect on mobile devices)
+			[].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+				el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+			} );
+			
 
+			$('[data-fancybox="gallery"]').fancybox({
+				buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"fullScreen",
+				"download",
+				"thumbs",
+				"close"
+				],
+				animationEffect: "zoom-in-out",
+				transitionEffect: "zoom-in-out",
+				loop:true,
+				spinnerTpl: '<div class="fancybox-loading"></div>',
+
+			});
+		</script>
 	
 	
 </body>

@@ -14,7 +14,7 @@ body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.6;
   color: #595959;
   background: #fff;
 }
@@ -2174,13 +2174,12 @@ animation: move-left 5s linear infinite;
 }
 
 
-#beach{
-line-height: 0px;
-}
+
  
 .center_ul{
 width: 100%;
 text-align: center;
+padding-bottom: 65px;
 }
 
 
@@ -2202,189 +2201,237 @@ height: 73%;
 
 
 }
+ #beach{
+line-height: 0px;
+}
 
 }
 
 
 .images-beach{
   padding: 120px 0 0;
+  /* margin-top: 200px; */
 
 }
 
-.box
-{
-  position: relative;
-  width: 100%;
-  height: 450px;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  transition: .5s;
-}
-.box:hover{
-transform: translateY(-30px);
-box-shadow: 0 50px 50px rgba(0,0,0,.5);
-}
+/****SECTION BEACH****/
 
 
-.box .imgBox
-{
-  position: relative;
-}
-.box .imgBox img{
-  transition: .5s;
-}
-
-.box:hover .imgBox img
-{
-opacity: .4;
-transform: translateY(-15px);
-}
-
-.box .content{
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  padding: 20px;
-  box-sizing: border-box;
-  transition: .5s;
-  opacity: 0;
-}
-
-.box:hover .content{
-  opacity: 1;
-  bottom: 0px;
-
-}
-
-.box .content h3{
-
-
-font-size: 2.5rem;
-color: #fff;
-font-weight: 700;
-
-}
-
-
-.box .content p{
-font-size: 1.8rem;
-color: #fff;
-font-weight: 400;
-
-}
-
-
-.box .content .btnD{
-border: none;
-background: #fe1b70;
-color: #fff;
-font-size: 1.3rem;
-padding: 10px 20px;
-font-weight: 700;
-transition: .5s;
-}
-
-.box .content .btnD:hover{
-background: #f6fe1b;
-color: #262626;
-}
-
- 
-@media screen and (min-width: 1024px){
-    .box{
-        height: 305px !important;
-        margin-top: 40px;
-    }
-}
-@media screen and (max-width: 768px){
-    .box{
-        height: 210px;
-        margin-top: 40px;
-    }
-}
-
-@media screen and (max-width: 768px){
-   .box:hover .imgBox img
-{
-opacity: .4;
-transform: translateY(-12px);
-}
-}
-
-
-@media screen and (max-width: 768px){
-
-.box .content{
-  opacity: 1;
-  bottom:-1px;
-  padding:8px;
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
   text-align: center;
 
-}
-}
-
-@media screen and (max-width: 768px){
-
-
-.box .content .btnD{
-border: 1px solid #fff;
-background:transparent;
-color: #fff;
-font-size: 0.8rem;
-/*padding: 10px 20px;*/
-font-weight: 700;
-transition: .5s;
-  text-shadow: 0 0 1px #000,
-               0 1px 2px rgba(0, 0, 0, .3);
-}
-}
-
-
-@media screen and (max-width: 768px){
-
-.box .content h3{
-font-size: 1.5rem;
-color: #fff;
-font-weight: 700;
+  
 
 }
+
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 20px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
-
-.box .content p{
-font-size: 1.3rem;
-color: #fff;
-font-weight: 400;
-
-}
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
 }
 
-/*Investigar*/
-@media screen and (min-width: 375px){
-    .box{
-        height: 220px;
-        margin-top: 40px;
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Oscar *****/
+/*---------------*/
+
+figure.effect-oscar {
+	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+  background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+  box-shadow: 0 6px 20px rgba(0,0,0,1);
+  
+}
+
+figure.effect-oscar img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+	padding: 3em;
+	background-color: rgba(58,52,42,0.7);
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+figure.effect-oscar figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+}
+
+figure.effect-oscar h2 {
+  color: white;
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar:hover img {
+	opacity: 0.4;
+}
+
+/* .grind_1{
+  margin-bottom: 300px;
+  } */
+
+@media screen and (max-width: 50em) {
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.grid figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
+  @media screen and (max-width: 1000px){
+    figure.effect-oscar:hover h2{
+      margin: 0;
+     font-size: 2.6rem;
     }
-}
-
-@media screen and (min-width: 414px){
-    .box{
-        height: 245px;
-        margin-top: 40px;
+    
+    figure.effect-oscar h2{
+      margin: 0px;
     }
-}
-
-@media screen and (max-width: 320px){
-    .box{
-        height: 185px;
-        margin-top: 40px;
     }
-}
-
-
-
+    @media screen and (min-width: 768px){
+      
+      figure.effect-oscar:hover h2{
+        margin-top: 65px !important;
+       margin-bottom: 27px;
+      }
+      figure.effect-oscar h2{
+        margin-top: 55px;
+      }
+      
+      
+     
+      }
+      @media screen and (min-width: 414px){
+        figure.effect-oscar:hover h2{
+          margin-top: 40px;
+         margin-bottom: 15px;
+        }
+        
+       
+        }
+        @media screen and (min-width: 360px){
+          figure.effect-oscar:hover h2{
+           margin-bottom: 15px;
+          }
+          
+         
+          }
+ 
 /*Footer*/
 
 
@@ -2394,17 +2441,7 @@ font-weight: 400;
   margin-right: 0px;
 }
 
-
-/*.prueba{
-    color:#fff;
-    z-index: 100;
-    top: 0;
-    position: absolute !important;
-    width: 100%;
-
-
-        text-align: center;
-}*/
+ 
 /*FOOTER*/
 
 .contenedor{
@@ -2557,152 +2594,7 @@ color: white;
 
 
 
-       .grid {
-        position: relative;
-        clear: both;
-        margin: 0 auto;
-        padding: 1em 0 4em;
-        max-width: 1000px;
-        list-style: none;
-        text-align: center;
-      }
-      
-      /* Common style */
-      .grid figure {
-        position: relative;
-        float: left;
-        overflow: hidden;
-        margin: 10px 1%;
-        min-width: 320px;
-        max-width: 480px;
-        max-height: 360px;
-        width: 48%;
-        height: auto;
-        background: #3085a3;
-        text-align: center;
-        cursor: pointer;
-      }
-      
-      .grid figure img {
-        position: relative;
-        display: block;
-        min-height: 100%;
-        max-width: 100%;
-        opacity: 0.8;
-      }
-      
-      .grid figure figcaption {
-        padding: 2em;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 1.25em;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-      
-      .grid figure figcaption::before,
-      .grid figure figcaption::after {
-        pointer-events: none;
-      }
-      
-      .grid figure figcaption,
-      .grid figure figcaption > a {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-      
-      /* Anchor will cover the whole item by default */
-      /* For some effects it will show as a button */
-      .grid figure figcaption > a {
-        z-index: 1000;
-        text-indent: 200%;
-        white-space: nowrap;
-        font-size: 0;
-        opacity: 0;
-      }
-      
-      .grid figure h2 {
-        word-spacing: -0.15em;
-        font-weight: 300;
-      }
-      
-      .grid figure h2 span {
-        font-weight: 800;
-      }
-      
-      .grid figure h2,
-      .grid figure p {
-        margin: 0;
-      }
-      
-      .grid figure p {
-        letter-spacing: 1px;
-        font-size: 68.5%;
-      }
-
-       figure.effect-apollo {
-        background: #3498db;
-      }
-      
-      figure.effect-apollo img {
-        opacity: 0.95;
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-        -webkit-transform: scale3d(1.05,1.05,1);
-        transform: scale3d(1.05,1.05,1);
-      }
-      
-      figure.effect-apollo figcaption::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255,255,255,0.5);
-        content: '';
-        -webkit-transition: -webkit-transform 0.6s;
-        transition: transform 0.6s;
-        -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
-        transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
-      }
-      
-      figure.effect-apollo p {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        margin: 3em;
-        padding: 0 1em;
-        max-width: 150px;
-        border-right: 4px solid #fff;
-        text-align: right;
-        opacity: 0;
-        -webkit-transition: opacity 0.35s;
-        transition: opacity 0.35s;
-      }
-      
-      figure.effect-apollo h2 {
-        text-align: left;
-      }
-      
-      figure.effect-apollo:hover img {
-        opacity: 0.6;
-        -webkit-transform: scale3d(1,1,1);
-        transform: scale3d(1,1,1);
-      }
-      
-      figure.effect-apollo:hover figcaption::before {
-        -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
-        transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
-      }
-      
-      figure.effect-apollo:hover p {
-        opacity: 1;
-        -webkit-transition-delay: 0.1s;
-        transition-delay: 0.1s;
-      }
+        
       
       /* ------------------------- */
 /* Estilos CSS del Reproductor */

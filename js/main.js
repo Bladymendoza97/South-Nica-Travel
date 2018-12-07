@@ -308,6 +308,7 @@
 
 
 var swiper = new Swiper('.swiper-container', {
+	loop: true,
 	slidesPerView: 1,
 	spaceBetween: 30,
 	 keyboard: {
@@ -333,25 +334,16 @@ var swiper = new Swiper('.swiper-container', {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev',
 	},
+	
    });
-/*Scroll navbar Animate*/
+   
+// 
+
+   
+   
+   
 
 
-
-
-
-$(window).on('scroll', function(){
-if ($(window).scrollTop()){
-$('nav').addClass('black');
-}
-
-else
-{
-
-$('nav').removeClass('black');
-}
-});
-
-
+   	
 
 
