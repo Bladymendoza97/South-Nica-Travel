@@ -2554,11 +2554,7 @@ color: white;
       background-color: white;
       color:#4183c4;
        }
-
-
-
-
-
+ 
 
        .social-buttons .social-icon.youtube{
         font-size: 22px;
@@ -2658,11 +2654,7 @@ color: white;
 
 }
 
-
-
-
-
-
+ 
 
 .fm-video .vjs-big-play-button:hover{
 	animation: none;
@@ -2693,6 +2685,70 @@ main .contenedor2 {
   display: flex;
   justify-content: center
 }
+
+
+
+
+
+
+
+
+/*TITTLE BEACH*/
+
+.text-animation-about{
+  list-style: none;
+  position: absolute;
+left: 50%;
+ /* top: 50%;*/
+  transform: translateX(-50%) translateY(-50%);
+ /* padding: 0; */
+ padding-left: 0;
+}
+
+
+.text-animation-about li{
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: 300;
+ color: #000;
+  font-size: 5rem;
+  opacity: 1;
+  transition: all 2.5s ease;
+
+}
+
+.text-animation-about li:last-child{
+  margin-right: 0;
+}
+
+.text-animation-about.hidden-text-about{
+  opacity: 0;
+
+}
+.text-animation-about.hidden-text-about li:nth-child(1) { transform: translateX(95px) translateY(-100px);}
+.text-animation-about.hidden-text-about li:nth-child(2) { transform: translateX(-170px) translateY(80px);}
+.text-animation-about.hidden-text-about li:nth-child(3) { transform: translateX(-380px) translateY(850px);}
+.text-animation-about.hidden-text-about li:nth-child(4) { transform: translateX(190px) translateY(-300px);}
+.text-animation-about.hidden-text-about li:nth-child(5) { transform: translateX(270px) translateY(320px);}
+ 
+
+
+@media screen and (max-width:768px ){
+.text-animation-about li{
+display: inline-block;
+  margin-right: 5px;
+  font-weight: 300;
+ color: #000;
+  font-size: 2.2rem;
+  opacity: 1;
+  transition: all 2.5s ease;
+  padding-left: 0px;
+}
+}
+ 
+
+
+
 
 
       /* ------------------------- */
@@ -2751,7 +2807,7 @@ left: 0;
 }
 
 .bg-two .content-box-expend{
-  background: #ffbb02;
+  background: #5499C7;
   left: 0;
   bottom: 0;
   top: auto;
@@ -2873,6 +2929,7 @@ height: 100%;
 .content-box .content-box-icon .icon_1{
   width: 100%;
   font-size: 50px;
+  color: #000;
 }  
 
 
@@ -2887,16 +2944,17 @@ transform: translateY(0%);
 }
 
 .main-wrapper h1{
-  color: #fff;
+  color: #000;
+  /* color: #fff; */
   font-size: 22px;
   line-height: 1.4;
   font-weight: 600;
   text-transform:uppercase;  
 }
 
-.main-wrapper h1 span{
+/* .main-wrapper h1 span{
   display: block;
-}
+} */
 
 .content-box-expend .content-box-text{
   width: 0;
@@ -2921,6 +2979,7 @@ transform: translateY(0%);
 .content-box-expend:hover h1{
   float: left;
   margin-left: 30px;
+  margin-top: 8px;
 }
 
 
@@ -2968,6 +3027,7 @@ transform: translateY(0%);
   .content-box-expend:hover h1{
     padding-top: 0px;
     margin-left: 35px;
+    margin-top: 8px;
   } 
   .content-box-expend .content-box-text p{
     font-size: 15px;
@@ -3029,6 +3089,7 @@ transform: translateY(0%);
   .content-box-expend:hover h1{
     padding-top: 0px;
     margin-left: 35px;
+    margin-top: 8px;
   }
   .bg-six .content-box-expend{
     left: 0px;
@@ -3094,6 +3155,7 @@ transform: translateY(0%);
   .content-box-expend:hover h1{
     padding-top: 0px;
     margin-left: 35px;
+    margin-top: 8px;
   }
   .bg-six .content-box-expend{
     left: 0px;
@@ -3108,7 +3170,7 @@ transform: translateY(0%);
     font-size: 35px;
   }  
   .content-box-expend:hover .content-box-title{
-    margin-left: 89px;
+    margin-left: 85px;
   }
 
 }
