@@ -2744,6 +2744,9 @@ left: 50%;
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 55px;/*opcional*/
+  /* position: relative;
+  z-index: 0; */
+  /*probar mañana*/
 }
 
 .content-box{

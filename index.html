@@ -31,15 +31,15 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
+	
 
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-	<!-- Date Picker -->
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<!-- Flaticons  -->
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 	<!-- Theme style  -->
@@ -76,8 +76,8 @@
 							
 	<ul>
 		<li class="active"><a href="index.html"><i class="fas fa-home hidden-sm hidden-md hidden-lg"></i>Home</a></li>
-		<li class="has-dropdown">
-			<a href="tours.html"><i class="fas fa-car hidden-sm hidden-md hidden-lg"></i>Services</a>
+		<li class="has-dropdown"><a href="#"><i class="fas fa-car hidden-sm hidden-md hidden-lg"></i>Services</a>
+			
 			<ul class="dropdown">
 
 				<li><a href="#"><i class="fas fa-home hidden-sm hidden-md hidden-lg"></i>Transporte Privado</a></li>
@@ -107,7 +107,7 @@
 		</li>
 		<li><a href="beach.html"><i class="fas fa-sun hidden-sm hidden-md hidden-lg"></i>Beach</a></li>
 		<li><a href="contact.html"><i class="fas fa-tty hidden-sm hidden-md hidden-lg"></i>Contact</a></li>
-		<li><a href="about.html"><i class="fas fa-users  hidden-sm hidden-md hidden-lg"></i>About</li>
+		<li><a href="about.html"><i class="fas fa-users  hidden-sm hidden-md hidden-lg"></i>About</a></li>
 
 
 							</ul>
@@ -184,180 +184,61 @@
 		<div class="container">
 		</div>
 		<div class="tab-content">
-			<div id="flight" class="tab-pane fade in active">
-	<form method="post" class="colorlib-form">
-		<div class="row">
-			<div class="col-md-3">
-				<div class="form-group">
-					<label for="date">Where:</label>
-					<div class="form-field">
-						<input type="text" id="location" class="form-control" placeholder="Search Location">
+
+				<div id="flight" class="tab-pane fade in active">
+						<form method="post" class="colorlib-form">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<label for="date">Where:</label>
+										<div class="form-field">
+											<input type="text" id="location" class="form-control" placeholder="Search Location">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<label for="date">Check-in:</label>
+										<div class="form-field">
+											<i class="icon icon-calendar2"></i>
+											<input type="text" id="date" class="form-control date" placeholder="Check-in date">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group">
+										<label for="date">Check-out:</label>
+										<div class="form-field">
+											<i class="icon icon-calendar2"></i>
+											<input type="text" id="date" class="form-control date" placeholder="Check-out date">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<label for="guests">Guest</label>
+										<div class="form-field">
+											<i class="icon icon-arrow-down3"></i>
+											<select name="people" id="people" class="form-control">
+												<option value="#">1</option>
+												<option value="#">2</option>
+												<option value="#">3</option>
+												<option value="#">4</option>
+												<option value="#">5</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<input type="submit" name="submit" id="submit" value="Reserva ahora" class="btn btn-primary btn-block">
+								</div>
+							</div>
+						</form>
 					</div>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="form-group">
-					<label for="date">Check-in:</label>
-					<div class="form-field">
-						<i class="icon icon-calendar2"></i>
-						<input type="text" id="date" class="form-control date" placeholder="Check-in date">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="form-group">
-					<label for="date">Check-out:</label>
-					<div class="form-field">
-						<i class="icon icon-calendar2"></i>
-						<input type="text" id="date" class="form-control date" placeholder="Check-out date">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="form-group">
-					<label for="guests">Guest</label>
-					<div class="form-field">
-						<i class="icon icon-arrow-down3"></i>
-						<select name="people" id="people" class="form-control">
-							<option value="#">1</option>
-							<option value="#">2</option>
-							<option value="#">3</option>
-							<option value="#">4</option>
-							<option value="#">5</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<input type="submit" name="submit" id="submit" value="Reserva ahora" class="btn btn-primary btn-block">
-			</div>
-		</div>
-	</form>
-</div>
-<div id="hotel" class="tab-pane fade">
-	<form method="post" class="colorlib-form">
-		<div class="row">
-			<div class="col-md-2">
-				<div class="booknow">
-					<h2>Book Now</h2>
-					<span>Best Price Online</span>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="form-group">
-					<label for="date">Check-in:</label>
-					<div class="form-field">
-						<i class="icon icon-calendar2"></i>
-						<input type="text" id="date" class="form-control date" placeholder="Check-in date">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="form-group">
-					<label for="date">Check-out:</label>
-					<div class="form-field">
-						<i class="icon icon-calendar2"></i>
-						<input type="text" id="date" class="form-control date" placeholder="Check-out date">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="form-group">
-					<label for="guests">Guest</label>
-					<div class="form-field">
-						<i class="icon icon-arrow-down3"></i>
-						<select name="people" id="people" class="form-control">
-							<option value="#">1</option>
-							<option value="#">2</option>
-							<option value="#">3</option>
-							<option value="#">4</option>
-							<option value="#">5+</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<input type="submit" name="submit" id="submit" value="Find Hotel" class="btn btn-primary btn-block">
-			</div>
-		</div>
-	</form>
-</div>
-<div id="car" class="tab-pane fade">
-	<form method="post" class="colorlib-form">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="form-group">
-					<label for="date">Where:</label>
-					<div class="form-field">
-						<input type="text" id="location" class="form-control" placeholder="Search Location">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="form-group">
-					<label for="date">Start Date:</label>
-					<div class="form-field">
-						<i class="icon icon-calendar2"></i>
-						<input type="text" id="date" class="form-control date" placeholder="Check-in date">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="form-group">
-					<label for="date">Return Date:</label>
-					<div class="form-field">
-						<i class="icon icon-calendar2"></i>
-						<input type="text" id="date" class="form-control date" placeholder="Check-out date">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<input type="submit" name="submit" id="submit" value="Find Car" class="btn btn-primary btn-block">
-			</div>
-		</div>
-	</form>
-</div>
-<div id="cruises" class="tab-pane fade">
-	<form method="post" class="colorlib-form">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="form-group">
-					<label for="date">Where:</label>
-					<div class="form-field">
-						<input type="text" id="location" class="form-control" placeholder="Search Location">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="form-group">
-					<label for="date">Start Date:</label>
-					<div class="form-field">
-						<i class="icon icon-calendar2"></i>
-						<input type="text" id="date" class="form-control date" placeholder="Check-in date">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="form-group">
-					<label for="guests">Categories</label>
-					<div class="form-field">
-						<i class="icon icon-arrow-down3"></i>
-						<select name="category" id="category" class="form-control">
-							<option value="#">Suite</option>
-							<option value="#">Super Deluxe</option>
-							<option value="#">Balcony</option>
-							<option value="#">Economy</option>
-							<option value="#">Luxury</option>
-						</select>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<input type="submit" name="submit" id="submit" value="Find Cruises" class="btn btn-primary btn-block">
-						</div>
-					</div>
-				</form>
-			</div>
+					
+					
+
+ 
 		</div>
 	</div>
 </div>
@@ -689,8 +570,7 @@
 			
 			</div>
 		
-			<script type="text/javascript" src="particles.js"></script>
-			<script type="text/javascript" src="app.js"></script>
+			 
 		
 			<!-- Add Pagination -->
 			<div class="swiper-button-next hidden-xs hidden-md"></div>
@@ -738,7 +618,7 @@
 
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="fa-arrow-to-top"></i></a>
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 	</div>
 
 
@@ -825,11 +705,16 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	
 	<!-- Date Picker -->
 	<script src="js/bootstrap-datepicker.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+
+
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	 
 	<!-- Stellar Parallax -->
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Main -->
@@ -845,6 +730,8 @@
 			responsive: true,
 			
 		});
+
+
 
 
 
