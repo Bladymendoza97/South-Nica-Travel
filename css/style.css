@@ -7,7 +7,7 @@
 
 /* =======================================================
 *
-* 	Template Style
+* 	My Style
 *
 * ======================================================= */
 body {
@@ -46,9 +46,7 @@ nav.black img.logo-prueba{
 
  .fa-home, .fa-sun, .fa-car, .fa-map, .fa-tty, .fa-users{
   margin-right: 30px;
-
-
-
+ 
 }
 .texto-center-parallax2{
   display: flex;
@@ -2590,8 +2588,6 @@ color: white;
 
 
 
-        
-      
       /* ------------------------- */
 /* Estilos CSS del Reproductor */
 /* ------------------------- */
@@ -2701,9 +2697,7 @@ main .contenedor2 {
   list-style: none;
   position: absolute;
 left: 50%;
- /* top: 50%;*/
   transform: translateX(-50%) translateY(-50%);
- /* padding: 0; */
  padding-left: 0;
 }
 
@@ -2727,6 +2721,8 @@ left: 50%;
   opacity: 0;
 
 }
+
+
 .text-animation-about.hidden-text-about li:nth-child(1) { transform: translateX(95px) translateY(-100px);}
 .text-animation-about.hidden-text-about li:nth-child(2) { transform: translateX(-170px) translateY(80px);}
 .text-animation-about.hidden-text-about li:nth-child(3) { transform: translateX(-380px) translateY(850px);}
