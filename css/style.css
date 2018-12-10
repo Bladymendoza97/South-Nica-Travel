@@ -2686,11 +2686,13 @@ main .contenedor2 {
   justify-content: center
 }
 
+ 
 
-
-
-
-
+ 
+      /* ------------------------- */
+/* SECTION ABOUT */
+/* ------------------------- */
+ 
 
 
 /*TITTLE BEACH*/
@@ -2733,30 +2735,7 @@ left: 50%;
  
 
 
-@media screen and (max-width:768px ){
-.text-animation-about li{
-display: inline-block;
-  margin-right: 5px;
-  font-weight: 300;
- color: #000;
-  font-size: 2.2rem;
-  opacity: 1;
-  transition: all 2.5s ease;
-  padding-left: 0px;
-}
-}
- 
-
-
-
-
-
-      /* ------------------------- */
-/* SECTION ABOUT */
-/* ------------------------- */
-
-
-
+/*box content about*/
 
 .main-wrapper{
   width:100%;
@@ -2982,9 +2961,36 @@ transform: translateY(0%);
   margin-top: 8px;
 }
 
+ 
+/*titulo about responsive*/
+@media screen and (max-width:768px ){
+  .text-animation-about li{
+  display: inline-block;
+    margin-right: 5px;
+    font-weight: 300;
+   color: #000;
+    font-size: 2.2rem;
+    opacity: 1;
+    transition: all 2.5s ease;
+    padding-left: 0px;
+   }
+  }
 
-/*RESPONSIVE SECTION ABOUT*/
+/*RESPONSIVE CONTENT BOX ABOUT*/
 
+
+@media screen and (max-width:768px ){
+.text-animation-about li{
+display: inline-block;
+  margin-right: 5px;
+  font-weight: 300;
+ color: #000;
+  font-size: 2.2rem;
+  opacity: 1;
+  transition: all 2.5s ease;
+  padding-left: 0px;
+}
+}
 
 
 @media only screen and (min-width:992px) and (max-width:1199px){
