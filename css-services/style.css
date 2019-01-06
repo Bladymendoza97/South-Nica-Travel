@@ -410,31 +410,47 @@
 		-ms-transform: rotate(-45deg) translateY(15%);
 		transform: rotate(-45deg) translateY(15%);
 	}
+	.title-h2{
+		font-size: 30px;
+		font-weight: 900;
+	}
 }
 
 @media only screen and (min-width:320px) and (max-width:479px){
 	.st-panel h2 {
-		font-size: 37px;
-		margin-top: 127px;
+		font-size: 36px;
+		margin-top: 115px;
 	}
 	
 	.st-panel p {
 		width: 90%;
 		left: 5%;
-		margin-top: 145px;
+		margin-top: 162px;
 	}
 	
 	.st-container > a {
 		font-size: 13px;
 	}
 	.st-deco{
-		width: 130px;
-		height: 130px;
+		width: 125px;
+		height: 125px;
 		left: 61%;
 		
 	}
 	[data-icon]:after{
-		font-size: 50px;
+		font-size: 48px;
+		top: 42%;
+		left: 42%;
+
 	}
+	.title-h2-3{
+		font-size: 27px;
+		font-weight: 900;
+	}
+	.title-h2-4{
+		font-size: 32px;
+		font-weight: 900;
+	}
+	
 } 
 
