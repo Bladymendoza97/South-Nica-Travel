@@ -378,18 +378,7 @@
 	color: rgba(255,255,255,0.8);
 }
 
-/* @media screen and (max-width: 520px) {
-
-} */
-/* @media screen and (max-width: 360px) {
-
-} */
-
-/* 
-@media only screen and (min-width:992px) and (max-width:1199px){}
-
-@media only screen and (min-width:768px) and (max-width:991px){}
-*/
+ 
 @media only screen and (min-width:480px) and (max-width:767px){
 	.st-container > a {
 		font-size: 10px;
