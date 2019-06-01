@@ -26,7 +26,7 @@
 .st-container > a {
 	z-index: 10;
 	font-weight: 700;
-	background: #e23a6e;
+	background-image: linear-gradient(to right bottom, #29323c, #343d46, #3f4950, #4c555a, #596164);
 	color: #fff;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
@@ -65,7 +65,7 @@
 
 .st-container > input:checked + a,
 .st-container > input:checked:hover + a{
-	background: #821134;
+	background-image: radial-gradient(circle, #29323c, #343d46, #3f4950, #4c555a, #596164);
 }
 
 .st-container > input:checked + a:after,
@@ -77,14 +77,14 @@
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-bottom-color: #821134;
+	border-bottom-color:#29323C;
 	border-width: 20px;
 	left: 50%;
 	margin-left: -20px;
 }
 
 .st-container > input:hover + a{
-	background: #AD244F;
+	background-image: linear-gradient(to bottom, #29323c, #343d46, #3f4950, #4c555a, #596164);
 }
 
 .st-container > input:hover + a:after {
@@ -163,7 +163,7 @@
 	top: 0px;
 	left: 50%;
 	margin-left: -100px;
-	background: #fa96b5;
+	background-image: linear-gradient(to bottom, #29323c, #343d46, #3f4950, #4c555a, #596164) !important;
 	-webkit-transform: translateY(-50%) rotate(45deg);
 	-moz-transform: translateY(-50%) rotate(45deg);
 	-o-transform: translateY(-50%) rotate(45deg);
@@ -193,11 +193,11 @@
 }
 
 .st-panel h2 {
-	margin-top:140px; 
-	color: #e23a6e;
+	margin-top:126px; 
+	color: #5d5d5d !important;
 	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
 	position: absolute;
-	font-size: 54px;
+	font-size: 45px;
 	font-weight: 900;
 	width: 80%;
 	left: 10%;
@@ -276,12 +276,12 @@
 }
 
 .st-panel p {
-	margin-top: 215px;
+	margin-top: 188px;
 	position: absolute;
 	text-align: center;
 	font-size: 16px;
 	/* line-height: 22px; */
-	color: #8b8b8b;
+	color: #5d5d5d !important;
 	z-index: 2;
 	padding: 0;
 	width: 50%;
@@ -361,10 +361,10 @@
 
 .st-color,
 .st-deco{
-	background: #fa96b5;
+	background:white;
 }
 .st-color [data-icon]:after {
-	color: #fa96b5;
+	color: white;
 }
 .st-color .st-deco {
 	background: #fff;
@@ -415,6 +415,7 @@
 		width: 90%;
 		left: 5%;
 		margin-top: 162px;
+		font-size: 14px;
 	}
 	
 	.st-container > a {
