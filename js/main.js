@@ -1,3 +1,4 @@
+
 (function () {
 	
 	'use strict';
@@ -304,8 +305,18 @@
 
 }());
 
+
+
+$(document).ready(function() {
+	console.log("Hola jquery");
+   });
+   
+   
+
 /* Initialize Swiper*/ 
 
+//validando para solo mostrar la library swiper en el index 
+if (window.location.href.indexOf('index') > -1) {
 
 var swiper = new Swiper('.swiper-container', {
 	loop: true,
@@ -337,10 +348,9 @@ var swiper = new Swiper('.swiper-container', {
 	
    });
    
- 
+}
 
-   
-   
+
    
 
 
